@@ -1,0 +1,10 @@
+#!/bin/bash
+
+docker run --name server\
+   -v `pwd`:/app/ \
+   --net net1 \
+   --memory="8G" \
+    -d \
+   node  \
+   bash -c 'cd app && node index.js'
+

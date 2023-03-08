@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+for i in `seq 1 $1`
+do
+docker run --name client$i \
+   -v `pwd`:/app/ \
+   --net net1 \
+   -d \
+   node  \
+   bash -c 'cd app && node client.js'
+
+done
