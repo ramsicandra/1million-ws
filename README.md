@@ -1,12 +1,9 @@
 # 1 Million Websockets with Node.JS
 
-Purpose: Evaluate effort to have 1 million websockets 1 server in 2023.
-tl; dr it's not hard 
+Purpose: It's fun to do.
 
-See [beyond 1million websockets](#conclusion--beyond-1000000-websockets)
-
-
-### References
+See
+- [Beyond 1million websockets](#conclusion--beyond-1000000-websockets)
 - [Eren Yanay - 1 million websockets with go](https://www.youtube.com/watch?v=LI1YTFMi8W4)
     - [Code snipet](https://github.com/eranyanay/1m-go-websockets)
 
