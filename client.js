@@ -13,7 +13,7 @@ dns.resolve4('server', (err, addr) => serverip = addr[0]);
 
 setInterval(function() {
 
-let tospawn = Math.min(10000 - sockets.length, 10);
+let tospawn = Math.min(20000 - sockets.length, 10);
 
 for(var i=0;i<tospawn;i++) {
     const s = new ws.WebSocket(`ws://${serverip}:8080/path`);
@@ -24,7 +24,7 @@ for(var i=0;i<tospawn;i++) {
 }
 
 
-}, 100);
+}, 10);
 
 
 setInterval(function() {
@@ -32,5 +32,5 @@ setInterval(function() {
     if(sockets.length === 0) return;
     var s = sockets[Math.floor(Math.random() * sockets.length)];
     s.send(t);
-}, 100);
+}, 1000);
 

@@ -10,4 +10,5 @@ docker run --name client$i \
    node  \
    bash -c 'cd app && node client.js'
 
+sleep 20
 done
